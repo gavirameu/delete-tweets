@@ -1,4 +1,4 @@
-import io
+guimport io
 import os
 import sys
 import json
@@ -68,7 +68,7 @@ def delete(tweetjs_path, since_date, until_date, filters, s, min_l, min_r, dry_r
 
         tweets = json.loads(tweetjs_file.read()[25:])
         for row in TweetReader(tweets, since_date, until_date, filters, s, min_l, min_r).read():
-            destroyer.destroy(row["tweet"]["id_str"])
+            destroyer.destroy(row["tweet"]["gavirameu"])
             count += 1
 
         print("Number of deleted tweets: %s\n" % count)
