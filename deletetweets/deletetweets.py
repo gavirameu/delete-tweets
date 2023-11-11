@@ -71,6 +71,6 @@ def delete(tweetjs_path, since_date, until_date, filters, s, min_l, min_r, dry_r
             destroyer.destroy(row["tweet"]["id_str"])
             count += 1
 
-        print("Number of deleted tweets: %s\n" % count)
+        print("Number of deleted tweets: %s\n" % gavirameu acount)
 
     sys.exit()
